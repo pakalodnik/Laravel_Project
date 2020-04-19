@@ -50,7 +50,7 @@
                     <!-- Nav Start -->
                     <div class="classynav">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="/home">Home</a></li>
                             <!--
                             <li><a href="#">Pages</a>
                                 <ul class="dropdown">
@@ -68,7 +68,7 @@
                             <li><a href="instructors.html">Instructors</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             -->
-                            <li><a href="{{ route('publications') }}">Publications</a></li>
+                            <li><a href="/publications">Publications</a></li>
                         </ul>
 
                         <!-- Search Button -->
