@@ -2,7 +2,7 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <h3>My tasks</h3>
+        <h3>Rava Down tasks</h3>
         <a href="{{route('tasks.create')}}" class="btn btn-success"></a>
         <div class="col-md-10 col-md-offset-1">
             <table class="table">
