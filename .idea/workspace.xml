@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baa4c800-cd83-4b8e-9dce-cc72ff53f6a8" name="Default Changelist" comment="" />
+    <list default="true" id="baa4c800-cd83-4b8e-9dce-cc72ff53f6a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/tasks/index.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -156,7 +160,7 @@
       <workItem from="1586694670817" duration="1972000" />
       <workItem from="1586699967064" duration="15770000" />
       <workItem from="1586753849557" duration="14525000" />
-      <workItem from="1587372286321" duration="16252000" />
+      <workItem from="1587372286321" duration="16843000" />
     </task>
     <task id="LOCAL-00001" summary="Add some migrations">
       <created>1587402776008</created>
@@ -179,7 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587409379628</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="newAdmin">
+      <created>1587409864038</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587409864038</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Vot">
+      <created>1587410060022</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1587410060022</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +208,8 @@
     <MESSAGE value="Add some migrations" />
     <MESSAGE value="Adm panel" />
     <MESSAGE value="newAdmin" />
-    <option name="LAST_COMMIT_MESSAGE" value="newAdmin" />
+    <MESSAGE value="Vot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vot" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1586804011946">
@@ -201,10 +220,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586703950982" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587409379020">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587410059518">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587409379020" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587410059518" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1586721104494">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
