@@ -1,8 +1,8 @@
 @extends('layout')
 @section('content')
+    @include('error')
 <div class="container">
     <h3>Create task</h3>
-    {{dd($errors)}}
     <div class="row">
         <div class="col-md-12">
             <div class="form-group">
