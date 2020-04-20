@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa4c800-cd83-4b8e-9dce-cc72ff53f6a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_155641_users.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_162415_authority.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_162429_departments.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_162450_roles.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/TasksController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Task.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_172644_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,8 +162,16 @@
       <workItem from="1586694670817" duration="1972000" />
       <workItem from="1586699967064" duration="15770000" />
       <workItem from="1586753849557" duration="14525000" />
-      <workItem from="1587372286321" duration="9154000" />
+      <workItem from="1587372286321" duration="14480000" />
     </task>
+    <task id="LOCAL-00001" summary="Add some migrations">
+      <created>1587402776008</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587402776008</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +179,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Add some migrations" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add some migrations" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1586804011946">
@@ -179,6 +191,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586703950982" />
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587402775358">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587402775358" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1586721104494">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -203,6 +219,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586728376663" />
+    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587402799657">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1587402799657" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1587372381702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
