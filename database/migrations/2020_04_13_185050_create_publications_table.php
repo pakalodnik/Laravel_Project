@@ -20,6 +20,7 @@ class CreatePublicationsTable extends Migration
             $table->string('city');
             $table->integer('page');
             $table->string('url');
+            #$table->boolean('isVerified')->default('0')->change();
             $table->timestamps();
         });
     }
