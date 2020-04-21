@@ -28,6 +28,8 @@ Route::get('/publications/{publication}/edit','PublicationController@edit')->nam
 Route::put('/publications/{contact}','PublicationController@update')->name('publications.update');
 Route::put('/publications/{contact}','PublicationController@destroy')->name('publications.destroy');
 
+Route::get('/teachers','TeacherController@index')->name('teacher')->middleware('teacher');
+
 Route::get('/publication', function () {
     return view('publication.publication_show');
 })->name('publication');
@@ -48,4 +50,8 @@ Route::delete('/tasks/{id}/destroy','TasksController@destroy')->name('tasks.dest
 
 
 
+Route::group(['as'=> 'teacher','prefix' => 'teacher', 'namespace' => 'Teacher', 'middleware' => ['auth', 'teacher']],
+    function() {
+        Route::get('/teachers', 'TeacherController@index')->name('teacher');
+    });
 

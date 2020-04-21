@@ -4,19 +4,17 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class Users extends Migration
+class Teachers extends Migration
 {
     /**
      * Run the migrations.
      *
-     *
      * @return void
      */
-
     public function up()
     {
         //
-        Schema::create('usersData', function (Blueprint $table) {
+        Schema::create('teachers', function (Blueprint $table) {
             $table->id('user_id');
             $table->string('first_name');
             $table->string('last_name');
@@ -28,7 +26,6 @@ class Users extends Migration
         });
     }
 
-
     /**
      * Reverse the migrations.
      *
@@ -36,6 +33,6 @@ class Users extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('usersData');
+        //
     }
 }
