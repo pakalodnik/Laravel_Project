@@ -28,6 +28,8 @@ Route::get('/publications/{publication}/edit','PublicationController@edit')->nam
 Route::put('/publications/{contact}','PublicationController@update')->name('publications.update');
 Route::put('/publications/{contact}','PublicationController@destroy')->name('publications.destroy');
 
+Route::get('/teachers','TeacherController@index')->name('teacher')->middleware('teacher');
+
 Route::get('/publication', function () {
     return view('publication.publication_show');
 })->name('publication');
@@ -42,4 +44,8 @@ Route::get('/tasks','TasksController@index')->name('tasks.index');
 Route::get('/tasks/create','TasksController@create')->name('tasks.create');
 Route::post('/tasks/store','TasksController@store')->name('tasks.store');
 
+Route::group(['as'=> 'teacher','prefix' => 'teacher', 'namespace' => 'Teacher', 'middleware' => ['auth', 'teacher']],
+    function() {
+        Route::get('/teachers', 'TeacherController@index')->name('teacher');
+    });
 

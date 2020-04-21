@@ -17,7 +17,7 @@ class Authority extends Migration
         Schema::create('authority', function (Blueprint $table) {
             $table->id('doc_id');
             $table->string('author_type');
-            $table->id('user_id');
+            $table->integer('user_id');
         });
     }
 

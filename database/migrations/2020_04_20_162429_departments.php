@@ -17,7 +17,7 @@ class Departments extends Migration
             $table->id('dept_id');
             $table->string('dept_name');
             $table->string('announcment');
-            $table->int('head_of_dept');
+            $table->integer('head_of_dept');
         });
         //
     }

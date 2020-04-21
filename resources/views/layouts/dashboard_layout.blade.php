@@ -49,6 +49,7 @@
 
                     <!-- Nav Start -->
                     <div class="classynav">
+                    @if (Route::has('login'))
                         <ul>
                             <li><a href="/home">Home</a></li>
                             <!--
@@ -69,8 +70,10 @@
                             <li><a href="blog.html">Blog</a></li>
                             -->
                             <li><a href="/publications">Publications</a></li>
+                            <li><a href="/teachers">Teachers</a></li>
                         </ul>
-
+                        @else
+                    @endif
                         <!-- Search Button -->
                         <div class="search-area">
                             <form action="#" method="post">
