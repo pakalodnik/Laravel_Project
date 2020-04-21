@@ -9,7 +9,7 @@
                 <br>
                 <textarea name="description" id="" cols="30" rows="10" class="form-control"></textarea>
                 <br>
-                <button class="btn btn-success">Submit</button>
+                <a href="{{route('tasks.store')}}" class="btn btn-success">Submit</a>
             </div>
         </div>
     </div>

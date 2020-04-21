@@ -5,7 +5,17 @@
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <div class='publication'>
         <div class="wrap-publication">
+        <div class="col-sm-12">
+            @if(session()->get('success'))
+            <div class="alert alert-success">
+                {{ session()->get('success') }}  
+            </div>
+            @endif
+        </div>
             <h1>Publication list</h1>
+            <div>
+                <a style="margin: 19px;" href="{{ route('publications.create')}}" class="btn btn-primary">New publication</a>
+             </div>  
             <table class="table table-bordered" id="table-publication">
             <thead class="thead-dark">
                 <tr>
@@ -26,6 +36,19 @@
                 <td>{{$publication->city}}</td>
                 <td>{{$publication->page}}</td>
                 <td><a href="{{$publication->url}}">{{$publication->url}}</a></td>
+                <!--
+                    <td>{{$publication->isVerified}}</td>
+                -->
+                <td>
+                    <a href="{{ route('publications.edit',$publication->id)}}" class="btn btn-primary">Edit</a>
+                </td>
+                <td>
+                    <form action="{{ route('publications.destroy', $publication->id)}}" method="post">
+                    @csrf
+                    @method('DELETE')
+                    <button class="btn btn-danger" type="submit">Delete</button>
+                    </form>
+                </td>
                 </tr>
             @endforeach
             </tbody>
