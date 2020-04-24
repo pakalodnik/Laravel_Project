@@ -511,7 +511,7 @@ textarea:focus {
     color: #ffffff;
     line-height: 40px; }
     .register-login-area a.active, .register-login-area a:hover, .register-login-area a:focus {
-      background-color: #007241;
+      background-color: #0B949E;
       font-weight: 600;
       color: #FFFFFF; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
