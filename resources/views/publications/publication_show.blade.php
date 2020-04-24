@@ -14,8 +14,8 @@
         </div>
             <h1>Publication list</h1>
             <div>
-                <a style="margin: 19px;" href="{{ route('publications.create')}}"  class="btn btn-primary">New publication</a>
-
+                <a style="margin: 19px; display: inline-block;" href="{{ route('publications.create')}}"  class="btn btn-primary">New publication</a>
+                <a style="margin: 19px; display: inline-block;" href="/createWord"  class="btn btn-primary">Generate word</a>
              </div>
             <table class="table table-bordered" id="table-publication">
             <thead class="thead-dark">
