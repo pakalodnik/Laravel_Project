@@ -511,9 +511,9 @@ textarea:focus {
     color: #ffffff;
     line-height: 40px; }
     .register-login-area a.active, .register-login-area a:hover, .register-login-area a:focus {
-      background-color: #d7e0fc;
+      background-color: #007241;
       font-weight: 600;
-      color: #ffffff; }
+      color: #FFFFFF; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .register-login-area a {
         padding: 0 15px; } }
@@ -532,9 +532,10 @@ textarea:focus {
     .login-state .user-name .dropdown-menu .dropdown-item {
       padding: 5px 30px;
       font-size: 13px;
-      font-weight: 600; }
+      font-weight: 600;
+      background-color: #006666 }
       .login-state .user-name .dropdown-menu .dropdown-item:hover, .login-state .user-name .dropdown-menu .dropdown-item:focus {
-        color: #ffffff; }
+        background-color: #006666; }
   .login-state .userthumb {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 40px;
@@ -1961,7 +1962,7 @@ textarea:focus {
       .bottom-footer-area .follow-us a:hover, .bottom-footer-area .follow-us a:focus {
         color: #ffffff; }
 
-   .dropdown-menu dropdown-menu-right{
+   .dropdown-menu-logout{
        background-color: #006666;
    }
 /*# sourceMappingURL=style.css.map */

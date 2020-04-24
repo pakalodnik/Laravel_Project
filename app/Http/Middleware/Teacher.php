@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Auth;
 
 class Teacher
 {
@@ -15,10 +16,10 @@ class Teacher
      */
     public function handle($request, Closure $next)
     {
-        if(Auth::check() && Auth::user()->role->id == 321) {
+        if(Auth::check() && Auth::user()->role_id == 2) {
             return $next($request);
         } else {
-            return redirect()->route('home');
+            return redirect()->route('login');
         };
     }
 }
