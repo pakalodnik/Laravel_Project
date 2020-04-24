@@ -8,14 +8,15 @@
         <div class="col-sm-12">
             @if(session()->get('success'))
             <div class="alert alert-success">
-                {{ session()->get('success') }}  
+                {{ session()->get('success') }}
             </div>
             @endif
         </div>
             <h1>Publication list</h1>
             <div>
-                <a style="margin: 19px;" href="{{ route('publications.create')}}" class="btn btn-primary">New publication</a>
-             </div>  
+                <a style="margin: 19px;" href="{{ route('publications.create')}}"  class="btn btn-primary">New publication</a>
+
+             </div>
             <table class="table table-bordered" id="table-publication">
             <thead class="thead-dark">
                 <tr>
@@ -52,7 +53,7 @@
                 </tr>
             @endforeach
             </tbody>
-            </table>   
-        </div>     
+            </table>
+        </div>
     </div>
 @endsection

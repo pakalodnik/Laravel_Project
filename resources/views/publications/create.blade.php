@@ -14,9 +14,9 @@
         </ul>
       </div><br />
     @endif
-      <form method="post" action="{{ route('publications.store') }}">
+      <form method="post" action="{{route('publications.store')}}">
           @csrf
-          <div class="form-group">    
+          <div class="form-group">
               <label for="title">Title:</label>
               <input type="text" class="form-control" name="title"/>
           </div>
@@ -37,7 +37,7 @@
           <div class="form-group">
               <label for="page">Page:</label>
               <input type="text" class="form-control" name="page"/>
-          </div>                     
+          </div>
           <button type="submit" class="btn btn-primary-outline">Add publication</button>
       </form>
   </div>
