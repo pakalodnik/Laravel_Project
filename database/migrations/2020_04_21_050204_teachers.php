@@ -14,18 +14,33 @@ class Teachers extends Migration
     public function up()
     {
         //
+        Schema::dropIfExists('teachers');
         Schema::create('teachers', function (Blueprint $table) {
-            $table->id('user_id');
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('patronymic');
-            $table->string('email')->unique();
-            $table->string('description');
+            $table->id('user_id')->nullable();
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
+            $table->string('patronymic')->nullable();
+            $table->string('email')->unique()->nullable();
+            $table->string('description')->nullable();
             $table->string('own');
             $table->timestamps();
         });
+        DB::table('teachers')->insert([
+            'first_name' => 'Sultanmakhmut',
+            'last_name' => 'Yermanalyuly',
+            'patronymic' => 'Presidentovich',
+            'email' => 'Sultan.Yerman@somatic.kz',
+            'description' => 'hzmzhzmhzmz',
+            'own' => 'dsa',
+        ],[
+            'first_name' => 'Sula',
+            'last_name' => 'Yermanalyuly',
+            'patronymic' => 'Presidentovich',
+            'email' => 'Sultan.Yerman@somatic.kz',
+            'description' => 'hzmzhzmhzmz',
+            'own' => 'dsa',
+        ]);
     }
-
     /**
      * Reverse the migrations.
      *
@@ -33,6 +48,7 @@ class Teachers extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('teachers');
         //
     }
 }

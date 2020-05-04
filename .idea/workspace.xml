@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="baa4c800-cd83-4b8e-9dce-cc72ff53f6a8" name="Default Changelist" comment="WOrd">
+    <list default="true" id="baa4c800-cd83-4b8e-9dce-cc72ff53f6a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_05_04_205410_qqson.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_05_04_210023_journal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_04_2020_11_44_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_04_2020_11_44__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_04_2020_9_13_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_21_04_2020_9_13__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/Teacher.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/Teacher.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_19_000000_create_failed_jobs_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_13_185050_create_publications_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_13_185050_create_publications_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_20_162415_authority.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_162415_authority.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_20_162429_departments.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_20_162429_departments.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_21_050204_teachers.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_21_050204_teachers.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +135,11 @@
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-validator" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-stdlib" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-escaper" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
     </include_path>
   </component>
   <component name="ProjectId" id="1aJ5Xo3K4OpZCUqjp9b2R8ytJtk" />
@@ -171,6 +193,12 @@
       <workItem from="1587636972598" duration="10294000" />
       <workItem from="1587659372287" duration="3692000" />
       <workItem from="1587751125492" duration="458000" />
+      <workItem from="1587751611701" duration="1107000" />
+      <workItem from="1588009142014" duration="397000" />
+      <workItem from="1588047053865" duration="4785000" />
+      <workItem from="1588619703819" duration="3522000" />
+      <workItem from="1588623424921" duration="560000" />
+      <workItem from="1588624045077" duration="1997000" />
     </task>
     <task id="LOCAL-00001" summary="Add some migrations">
       <created>1587402776008</created>
@@ -249,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587751312873</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="WOrd">
+      <created>1587751647739</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1587751647739</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,10 +313,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586703950982" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587751497483">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1587751646961">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587751497483" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1587751646961" />
+    <state x="100" y="100" width="1166" height="528" key="DiffContextDialog" timestamp="1588009221985">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="100" y="100" width="1166" height="528" key="DiffContextDialog/0.0.1366.728@0.0.1366.728" timestamp="1588009221985" />
     <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1586721104494">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -302,14 +341,18 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587413452293" />
+    <state x="129" y="54" key="MergeDialog" timestamp="1588620089861">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="129" y="54" key="MergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1588620089861" />
     <state x="517" y="287" key="NewPhpFileDialog" timestamp="1586728376663">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586728376663" />
-    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587751551808">
+    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588623506289">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1587751551808" />
+    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1588623506289" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1587372381702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
