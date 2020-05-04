@@ -56,3 +56,4 @@ Route::group(['as'=> 'teacher','prefix' => 'teacher', 'namespace' => 'Teacher', 
     });
 
 Route::get('/createWord',['as' =>'createWord','uses'=>'WordTestController@createWordDocx'])->name('publications.word');
+Route::get('invoices/download', 'InvoiceController@download');

@@ -14,11 +14,16 @@ class Authority extends Migration
     public function up()
     {
         //
+        
         Schema::create('authority', function (Blueprint $table) {
-            $table->id('doc_id');
+            $table->integer('publication_id')->unsigned();
             $table->string('author_type');
-            $table->integer('user_id');
+            $table->integer('author_id')->unsigned();   
+            $table->foreign('publication_id')->references('id')->on('publications')->onDelete('cascade');
+            $table->foreign('author_id')->references('id')->on('users')->onDelete('cascade');
         });
+
+        
     }
 
     /**

@@ -13,8 +13,9 @@ class CreatePublicationsTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('publications', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->string('title');
             $table->year('year');
             $table->string('city');
