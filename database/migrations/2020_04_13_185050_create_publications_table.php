@@ -28,7 +28,7 @@ class CreatePublicationsTable extends Migration
             #$table->boolean('isVerified')->default('0')->change();
             $table->timestamps();
         });
-        DB::table('teachers')->insert([
+        DB::table('publications')->insert([
             'id'=>'1',
             'title' => 'Energya Vselennoy(Ya Hippy)',
             'magazine' => 'Masonskoe bratstvo',

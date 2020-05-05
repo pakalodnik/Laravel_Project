@@ -32,8 +32,8 @@
           </div>
           
           <div class="form-group">
-              <label for="title">Univercity/Organization:</label>
-              <input type="text" class="form-control" name="univercity"/>
+              <label for="title">University/Organization:</label>
+              <input type="text" class="form-control" name="university"/>
           </div>
           
           <div class="form-group">

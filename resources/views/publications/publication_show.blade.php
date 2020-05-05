@@ -39,7 +39,7 @@
                 <td>{{$publication->title}}</td>
                 <td>{{$publication->magazine}}</td>
                 <td>{{$publication->country}}</td>
-                <td>{{$publication->univercity}}</td>
+                <td>{{$publication->university}}</td>
                 <td>{{$publication->year}}</td>
                 <td>{{$publication->page}}</td>
                 <td><a href="{{$publication->url}}">{{$publication->url}}</a></td>
