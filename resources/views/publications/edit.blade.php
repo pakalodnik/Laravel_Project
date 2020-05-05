@@ -18,34 +18,49 @@
             @method('PATCH') 
             @csrf
             <div class="form-group">
+              <label for="title">Title:</label>
+              <input type="text" class="form-control" name="title"/>
+          </div>
 
-                <label for="title">Title:</label>
-                <input type="text" class="form-control" name="title" value={{ $publication->title }} />
-            </div>
+          <div class="form-group">
+              <label for="title">Magazine:</label>
+              <input type="text" class="form-control" name="magazine"/>
+          </div>
 
-            <div class="form-group">
-                <label for="year">Year:</label>
-                <input type="text" class="form-control" name="year" value={{ $publication->year }} />
-            </div>
+          <div class="form-group">
+              <label for="title">Country:</label>
+              <input type="text" class="form-control" name="country"/>
+          </div>
+          
+          <div class="form-group">
+              <label for="title">Univercity/Organization:</label>
+              <input type="text" class="form-control" name="univercity"/>
+          </div>
+          
+          <div class="form-group">
+              <label for="year">Year:</label>
+              <input type="text" class="form-control" name="year"/>
+          </div>
 
-            <div class="form-group">
-                <label for="page">Page:</label>
-                <input type="text" class="form-control" name="page" value={{ $publication->page }} />
-            </div>
-            <div class="form-group">
-                <label for="city">City:</label>
-                <input type="text" class="form-control" name="city" value={{ $publication->city }} />
-            </div>
-            <!--
-            <div class="form-group">
-                <label for="isVerified">Is Verified:</label>
-                <input type="text" class="form-control" name="isVerified" value={{ $publication->isVerified }} />
-            </div>
-            -->
-            <div class="form-group">
-                <label for="url">URL:</label>
-                <input type="text" class="form-control" name="url" value={{ $publication->url }} />
-            </div>
+          <div class="form-group">
+              <label for="url">URL:</label>
+              <input type="text" class="form-control" name="url"/>
+          </div>
+
+          <div class="form-group">
+              <label for="page">Page:</label>
+              <input type="text" class="form-control" name="page"/>
+          </div>
+
+          <div class="form-group">
+              <label for="title">Impact factor:</label>
+              <input type="text" class="form-control" name="factor"/>
+          </div>
+          
+          <div class="form-group">
+              <label for="title">Index Base:</label>
+              <input type="text" class="form-control" name="base"/>
+          </div>
             <button type="submit" class="btn btn-primary">Update</button>
         </form>
     </div>

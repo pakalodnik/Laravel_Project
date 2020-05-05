@@ -26,9 +26,10 @@
                 <th scope="col">Country</th>
                 <th scope="col">Organization</th>
                 <th scope="col">Year</th>
-                <th scope="col">City</th>
                 <th scope="col">Page</th>
                 <th scope="col">URL</th>
+                <th scope="col">Impact</th>
+                <th scope="col">Index Base</th>
                 </tr>
             </thead>
             <tbody>
@@ -36,10 +37,14 @@
                 <tr>
                 <td>{{$publication->id}}</td>
                 <td>{{$publication->title}}</td>
+                <td>{{$publication->magazine}}</td>
+                <td>{{$publication->country}}</td>
+                <td>{{$publication->univercity}}</td>
                 <td>{{$publication->year}}</td>
-                <td>{{$publication->city}}</td>
                 <td>{{$publication->page}}</td>
                 <td><a href="{{$publication->url}}">{{$publication->url}}</a></td>
+                <td>{{$publication->factor}}</td>
+                <td>{{$publication->base}}</td>
                 <!--
                     <td>{{$publication->isVerified}}</td>
                 -->
