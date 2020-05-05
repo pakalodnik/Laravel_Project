@@ -34,5 +34,6 @@ class Teachers extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('teachers');
     }
 }

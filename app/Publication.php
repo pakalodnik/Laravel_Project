@@ -9,10 +9,14 @@ class Publication extends Model
     //
     protected $fillable=[
         'title',
+        'magazine',
+        'country',
+        'univercity',
         'year',
-        'city',
+        'url',
         'page',
-        'url'
+        'factor',
+        'base'
         #'isVerified'
     ];
 }

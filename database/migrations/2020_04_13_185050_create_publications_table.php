@@ -17,10 +17,14 @@ class CreatePublicationsTable extends Migration
         Schema::create('publications', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title');
+            $table->string('magazine');
+            $table->string('country');
+            $table->string('univercity');
             $table->year('year');
-            $table->string('city');
-            $table->integer('page');
+            $table->string('page');
             $table->string('url');
+            $table->string('factor');
+            $table->string('base');
             #$table->boolean('isVerified')->default('0')->change();
             $table->timestamps();
         });

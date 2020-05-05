@@ -48,10 +48,14 @@ class PublicationController extends Controller
 
         $publication = new Publication([
             'title' => $request->get('title'),
+            'magazine'=> $request->get('magazine'),
+            'country'=> $request->get('country'),
+            'univercity'=> $request->get('v'),
             'year' => $request->get('year'),
             'url' => $request->get('url'),
             'page' => $request->get('page'),
-            'city' => $request->get('city'),
+            'factor' => $request->get('factor'),
+            'base'=> $request->get('base')
             #'isVerified' => $request->get('isVerified')
         ]);
         $publication->save();
@@ -101,11 +105,15 @@ class PublicationController extends Controller
         ]);
 
         $publication = Publication::find($id);
-        $publication->title =  $request->get('title');
+        $publication->title = $request->get('title');
+        $publication->magazine= $request->get('magazine');
+        $publication->country= $request->get('country');
+        $publication->univercity= $request->get('univercity');
         $publication->year = $request->get('year');
         $publication->url = $request->get('url');
         $publication->page = $request->get('page');
-        $publication->city = $request->get('city');
+        $publication->factor = $request->get('factor');
+        $publication->base= $request->get('base');
         #$publication->isVerified = $request->get('isVerified');
         $publication->save();
 

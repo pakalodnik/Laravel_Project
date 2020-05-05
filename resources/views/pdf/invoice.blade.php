@@ -23,68 +23,138 @@
   </style>
 </head>
 <body>
-    <div style="width: 100%; max-width: 960px; margin: auto">
+    <h4 style="width: 700px; text-align: center">Отчёт преподавателя кафедры (название) (ФИО) о выполнении индивидуального плана 
+                за первое полугодие (год) учебный год</h4>
+    <div style="width: 100%; max-width: 720px; margin: auto">
         <table width="100%">
-            <tr style="border-bottom: 1px solid #000000">
-                <td><h2>Publications</h2></td>
-                <td style="text-align: right"><h3>Order # 12345</h3></td>
-            </tr>
             <tr>
-                <td style="padding-bottom: 16px;">
-                    <strong>Billed To:</strong><br>
-                    John Smith<br>
-                    1234 Victory Avenue<br>
-                    Apt. 5D<br>
-                    Sunfield, ST 54321
-                </td>
-                <td style="text-align: right; padding-bottom: 16px;">
-                    <strong>Shipped To:</strong><br>
-                    John Smith<br>
-                    1234 Victory Avenue<br>
-                    Apt. 5D<br>
-                    Sunfield, ST 54321
+                <td style="padding-bottom: 10px;">
+                        <b>ФИО: </b><br>
+                        <b>Должность: </b><br>
+                        <b>Степень, звание: </b><br>
+                        <b>Штатный, совместитель: </b>
                 </td>
             </tr>
             <tr>
-                <td>
-                    <strong>Payment Method:</strong><br>
-                        Visa ending **** 4242<br>
-                        jsmith@email.com
+                <td style="padding-bottom: 10px;">
+                    <div style="margin-left:30px">За первое полугодие (год) учебный год мною проделана работа: </div>
                 </td>
-                <td style="text-align: right">
-                    <strong>Order Date:</strong><br>
-                    March 7, 2014<br><br>
+            </tr>
+            <tr>
+                <td style="padding-bottom: 10px;">
+                    <div style="margin-left:15px">2.	<b>Научная работа</b> (привести список публикаций по следующему образцу):</div>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <h3>Order summary</h3>
+                    <b>а) Публикации с ненулевым Импакт-фактором</b>
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
-                    <table width="100%" cellpadding="0" cellspacing="0" border="1">
+                <td colspan="2" style="border-bottom: 20px solid #FFF;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="1" margin-right="5px">
                         <thead>
-                            <tr style="background-color: #eee">
-                                <th style="text-align: left; padding: 5px 10px;">Item</th>
-                                <th style="text-align: center; padding: 5px 10px;">Price</strong></th>
-                                <th style="text-align: center; padding: 5px 10px;">Quantity</th>
-                                <th style="text-align: right; padding: 5px 10px;">Totals</th>
+                            <tr style="background-color: #FFFFFF">
+                                <th style="text-align: center; ">№</th>
+                                <th style="text-align: center; ">Ф.И.О.<br>автор(ы)</strong></th>
+                                <th style="text-align: center; ">Название<br>публикации</th>
+                                <th style="text-align: center; ">Выходные данные,<br>ссылка на статью</th>
+                                <th style="text-align: center; ">ИФ</th>
+                                <th style="text-align: center; ">Индекси<br>руемая база</th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach ($publications as $publication)
                                 <tr>
-                                    <td style="text-align: left; padding: 5px 10px;">{{ $publication['id'] }}</td>
-                                    <td style="text-align: center; padding: 5px 10px;">{{ $publication['title'] }}</td>
-                                    <td style="text-align: center; padding: 5px 10px;">{{ $publication['year'] }}</td>
-                                    <td style="text-align: right; padding: 5px 10px;">{{ $publication['city'] }}</td>
+                                    <td style="text-align: center; ">{{ $publication['id'] }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ Auth::user()->name }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['title'] }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['year'] }}. - P. {{ $publication['page'] }}
+                                    <br>
+                                    {{ $publication['url'] }}
+                                    </td>
+                                    <td style="text-align: center;">0,1</td>
+                                    <td style="text-align: center;">Scopus</td>
                                 </tr>
                             @endforeach
                             
                         </tbody>
                     </table>
                 </td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <b>б) Публикации в журналах рекомендованных ККСОН</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="3" style="border-bottom: 20px solid #FFF;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="1" margin-right="5px">
+                        <thead>
+                            <tr style="background-color: #FFFFFF">
+                                <th style="text-align: center; ">№</th>
+                                <th style="text-align: center; ">Ф.И.О.<br>автор(ы)</strong></th>
+                                <th style="text-align: center; ">Название<br>публикации</th>
+                                <th style="text-align: center; ">Выходные данные</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--@foreach ($publications as $publication)
+                                <tr>
+                                    <td style="text-align: center; ">{{ $publication['id'] }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ Auth::user()->name }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['title'] }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['year'] }}. - P. {{ $publication['page'] }}
+                                    <br>
+                                    {{ $publication['url'] }}
+                                    </td>
+                                    <td style="text-align: center;">0,1</td>
+                                    <td style="text-align: center;">Scopus</td>
+                                </tr>
+                            @endforeach
+                            -->
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" >
+                    <b>в) Публикации в журналах и конференциях</b>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4" style="border-bottom: 20px solid #FFF;">
+                    <table width="100%" cellpadding="0" cellspacing="0" border="1" margin-right="5px">
+                        <thead>
+                            <tr style="background-color: #FFFFFF">
+                                <th style="text-align: center; ">№</th>
+                                <th style="text-align: center; ">Ф.И.О.<br>автор(ы)</strong></th>
+                                <th style="text-align: center; ">Название<br>публикации</th>
+                                <th style="text-align: center; ">Выходные данные</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!--@foreach ($publications as $publication)
+                                <tr>
+                                    <td style="text-align: center; ">{{ $publication['id'] }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ Auth::user()->name }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['title'] }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['year'] }}. - P. {{ $publication['page'] }}
+                                    <br>
+                                    {{ $publication['url'] }}
+                                    </td>
+                                    <td style="text-align: center;">0,1</td>
+                                    <td style="text-align: center;">Scopus</td>
+                                </tr>
+                            @endforeach
+                            -->
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align:left">Дата</td>
+                <td style="text-align:right margin-right:100px">Подпись</td>
             </tr>
         </table>
     </div>
