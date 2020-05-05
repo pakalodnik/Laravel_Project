@@ -25,10 +25,17 @@ class Qqson extends Migration
         });
         DB::table('qqsons')->insert([
             'FIO' => 'Y. Sultanmakhmut P.',
-            'publication_name' => 'Energya Vselennoy(Ya Hippy)',
-            'journal' => 'Masonskoe bratstvo',
+            'publication_name' => 'Multi-criteria decision-making model based on the level of doubt for information and training system (статья)',
+            'journal' => 'Вестник АУЭС 19(4C)',
             'date' => '2012/12/10',
-            'page' => '12',
+            'page' => '13',
+        ]);
+        DB::table('qqson')->insert([
+            'FIO' => 'Dauletbek Y. T.',
+            'publication_name' => 'Multi-criteria decision-making model based on the level of doubt for information and training system (статья)',
+            'journal' => 'Riga: Computer Modelling & New Technologies, 19(4C),',
+            'date' => '2014/12/10',
+            'page' => '13',
         ]);
     }
 

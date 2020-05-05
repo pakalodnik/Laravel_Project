@@ -26,7 +26,7 @@ class Journal extends Migration
         });
         DB::table('journal')->insert([
             'FIO' => 'Y. Sultanmakhmut P.',
-            'publication_name' => 'Energya Vselennoy(Ya Hippy)',
+            'publication_name' => 'Особенности управления процессом обучения при организации МООС (статья)',
             'source'=>'Scopus',
             'date' => '2012/12/10',
             'page' => '12',

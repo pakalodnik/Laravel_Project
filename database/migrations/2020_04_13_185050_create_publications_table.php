@@ -19,7 +19,7 @@ class CreatePublicationsTable extends Migration
             $table->string('title');
             $table->string('magazine');
             $table->string('country');
-            $table->string('university');
+            $table->string('university')->nullable();
             $table->year('year');
             $table->string('page');
             $table->string('url');
@@ -30,15 +30,15 @@ class CreatePublicationsTable extends Migration
         });
         DB::table('publications')->insert([
             'id'=>'1',
-            'title' => 'Energya Vselennoy(Ya Hippy)',
-            'magazine' => 'Masonskoe bratstvo',
+            'title' => 'Multi-criteria decision-making model based on the level of doubt for information and training system (статья)',
+            'magazine' => 'Riga: Computer Modelling & New Technologies, 19(4C)',
             'country' => 'Almaty',
             'university' => 'IITU',
             'year' => '2012',
             'page' => '12',
-            'url' => 'Somatic.kz',
-            'factor' => 'dsa',
-            'base' => 'dsa',
+            'url' => 'https://somatic.kz/',
+            'factor' => '0.5',
+            'base' => 'Based',
         ]);
     }
 
