@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="baa4c800-cd83-4b8e-9dce-cc72ff53f6a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/laravel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_21_050204_teachers.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_21_050204_teachers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_04_205410_qqson.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_04_205410_qqson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_04_210023_journal.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_04_210023_journal.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_13_185050_create_publications_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_13_185050_create_publications_table.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +188,7 @@
       <workItem from="1588619703819" duration="3522000" />
       <workItem from="1588623424921" duration="560000" />
       <workItem from="1588624045077" duration="4550000" />
-      <workItem from="1588651686641" duration="847000" />
+      <workItem from="1588651686641" duration="1666000" />
     </task>
     <task id="LOCAL-00001" summary="Add some migrations">
       <created>1587402776008</created>
@@ -287,7 +281,14 @@
       <option name="project" value="LOCAL" />
       <updated>1588626249385</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update tables">
+      <created>1588652738030</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1588652738031</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,7 +307,8 @@
     <MESSAGE value="Update Some Edit,Update moments" />
     <MESSAGE value="WOrd" />
     <MESSAGE value="update DB" />
-    <option name="LAST_COMMIT_MESSAGE" value="update DB" />
+    <MESSAGE value="update tables" />
+    <option name="LAST_COMMIT_MESSAGE" value="update tables" />
   </component>
   <component name="WindowStateProjectService">
     <state x="488" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1586804011946">
@@ -317,10 +319,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1586703950982" />
-    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1588626248649">
+    <state x="308" y="0" key="CommitChangelistDialog2" timestamp="1588652737231">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588626248649" />
+    <state x="308" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1588652737231" />
     <state x="100" y="100" width="1166" height="528" key="DiffContextDialog" timestamp="1588009221985">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -353,10 +355,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="517" y="287" key="NewPhpFileDialog/0.0.1366.728@0.0.1366.728" timestamp="1586728376663" />
-    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588651694840">
+    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1588652892670">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1588651694840" />
+    <state x="492" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1588652892670" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1587372381702">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

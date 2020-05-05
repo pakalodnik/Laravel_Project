@@ -19,7 +19,7 @@ class CreatePublicationsTable extends Migration
             $table->string('title');
             $table->string('magazine');
             $table->string('country');
-            $table->string('univercity');
+            $table->string('university');
             $table->year('year');
             $table->string('page');
             $table->string('url');
@@ -28,6 +28,18 @@ class CreatePublicationsTable extends Migration
             #$table->boolean('isVerified')->default('0')->change();
             $table->timestamps();
         });
+        DB::table('teachers')->insert([
+            'id'=>'1',
+            'title' => 'Energya Vselennoy(Ya Hippy)',
+            'magazine' => 'Masonskoe bratstvo',
+            'country' => 'Almaty',
+            'university' => 'IITU',
+            'year' => '2012',
+            'page' => '12',
+            'url' => 'Somatic.kz',
+            'factor' => 'dsa',
+            'base' => 'dsa',
+        ]);
     }
 
     /**
