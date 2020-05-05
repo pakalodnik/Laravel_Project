@@ -69,12 +69,12 @@
                                     <td style="text-align: center; ">{{ $publication['id'] }}</td>
                                     <td style="text-align: left; padding: 0px 0px 0px 5px">{{ Auth::user()->name }}</td>
                                     <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['title'] }}</td>
-                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['year'] }}. - P. {{ $publication['page'] }}
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['magazine'] }}. - {{ $publication['country'] }}: {{ $publication['university'] }}, {{ $publication['year'] }}. - P. {{ $publication['page'] }}
                                     <br>
                                     {{ $publication['url'] }}
                                     </td>
-                                    <td style="text-align: center;">0,1</td>
-                                    <td style="text-align: center;">Scopus</td>
+                                    <td style="text-align: center;">{{ $publication['factor'] }}</td>
+                                    <td style="text-align: center;">{{ $publication['base'] }}</td>
                                 </tr>
                             @endforeach
                             
@@ -99,20 +99,20 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!--@foreach ($publications as $publication)
+                            @foreach ($qqsons as $qqson)
                                 <tr>
-                                    <td style="text-align: center; ">{{ $publication['id'] }}</td>
-                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ Auth::user()->name }}</td>
-                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['title'] }}</td>
-                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $publication['year'] }}. - P. {{ $publication['page'] }}
+                                    <td style="text-align: center; ">{{ $qqson['id'] }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $qqson['FIO'] }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{ $qqson['publication_name'] }}</td>
+                                    <td style="text-align: left; padding: 0px 0px 0px 5px">{{$qqson['journal']}}
                                     <br>
-                                    {{ $publication['url'] }}
+                                    {{ $qqson['date'] }}. - P. {{ $qqson['page'] }}
+                                    
                                     </td>
-                                    <td style="text-align: center;">0,1</td>
-                                    <td style="text-align: center;">Scopus</td>
+                                    
                                 </tr>
                             @endforeach
-                            -->
+                            
                         </tbody>
                     </table>
                 </td>

@@ -35,16 +35,14 @@
                 <td>{{$qqson->FIO}}</td>
                 <td>{{$qqson->publication_name}}</td>
                 <td>{{$qqson->journal}}</td>
-                <td>{{$publication->date}}</td>
-                <td>{{$publication->page}}</td>
-                <!--
-                    <td>{{$publication->isVerified}}</td>
-                -->
+                <td>{{$qqson->date}}</td>
+                <td>{{$qqson->page}}</td>
+                
                 <td>
-                    <a href="{{ route('Qqson.edit',$qqson->id)}}" class="btn btn-primary">Edit</a>
+                    <a href="{{ route('Qqson.qqson_edit',$qqson->id)}}" class="btn btn-primary">Edit</a>
                 </td>
                 <td>
-                    <form action="{{ route('Qqson.destroy', $qqson->id)}}" method="post">
+                    <form action="{{ route('Qqson.qqson_destroy', $qqson->id)}}" method="post">
                     @csrf
                     @method('DELETE')
                     <button class="btn btn-danger" type="submit">Delete</button>

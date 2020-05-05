@@ -30,7 +30,7 @@ class Qqson extends Migration
             'date' => '2012/12/10',
             'page' => '13',
         ]);
-        DB::table('qqson')->insert([
+        DB::table('qqsons')->insert([
             'FIO' => 'Dauletbek Y. T.',
             'publication_name' => 'Multi-criteria decision-making model based on the level of doubt for information and training system (статья)',
             'journal' => 'Riga: Computer Modelling & New Technologies, 19(4C),',
