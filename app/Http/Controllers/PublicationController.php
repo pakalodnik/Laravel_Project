@@ -108,7 +108,7 @@ class PublicationController extends Controller
         $publication->title = $request->get('title');
         $publication->magazine= $request->get('magazine');
         $publication->country= $request->get('country');
-        $publication->univercity= $request->get('univercity');
+        $publication->university= $request->get('university');
         $publication->year = $request->get('year');
         $publication->url = $request->get('url');
         $publication->page = $request->get('page');
