@@ -13,15 +13,25 @@ class Journal extends Migration
      */
     public function up()
     {
-        Schema::create('qqson', function (Blueprint $table) {
+        Schema::dropIfExists('journal');
+        Schema::create('journal', function (Blueprint $table) {
             $table->id('user_id')->nullable();
-            $table->string('first_name')->nullable();
-            $table->string('last_name')->nullable();
-            $table->string('patronymic')->nullable();
-            $table->string('publication_name')->unique()->nullable();
-            $table->string('Output_data')->nullable();
+            $table->string('FIO')->nullable();
+            $table->string('publication_name')->nullable();
+            $table->string('source')->nullable();
+            $table->date('date')->unique()->nullable();
+            $table->string('page')->nullable();
+            $table->string('url')->nullable();
             $table->timestamps();
         });
+        DB::table('journal')->insert([
+            'FIO' => 'Y. Sultanmakhmut P.',
+            'publication_name' => 'Energya Vselennoy(Ya Hippy)',
+            'source'=>'Scopus',
+            'date' => '2012/12/10',
+            'page' => '12',
+            'url'=>'Somatic.kz'
+        ]);
         //
     }
 
@@ -32,6 +42,7 @@ class Journal extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('journal');
         //
     }
 }
