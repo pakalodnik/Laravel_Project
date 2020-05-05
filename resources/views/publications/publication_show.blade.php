@@ -22,6 +22,9 @@
                 <tr>
                 <th scope="col">ID</th>
                 <th scope="col">Title</th>
+                <th scope="col">Magazine</th>
+                <th scope="col">Country</th>
+                <th scope="col">Organization</th>
                 <th scope="col">Year</th>
                 <th scope="col">City</th>
                 <th scope="col">Page</th>
