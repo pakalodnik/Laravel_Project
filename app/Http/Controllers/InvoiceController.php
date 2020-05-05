@@ -13,9 +13,9 @@ class InvoiceController extends Controller
 
         
 
-        $pdf = PDF::loadView('pdf.invoice', compact('publications'));
+        $pdf = PDF::loadView('pdf.report', compact('publications'));
 
-        return $pdf->download('invoice.pdf');
+        return $pdf->download('report.pdf');
     }
 }
 

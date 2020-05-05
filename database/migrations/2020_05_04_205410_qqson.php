@@ -13,9 +13,9 @@ class Qqson extends Migration
      */
     public function up()
     {
-        Schema::dropIfExists('qqson');
-        Schema::create('qqson', function (Blueprint $table) {
-            $table->id('user_id')->nullable();
+        Schema::dropIfExists('qqsons');
+        Schema::create('qqsons', function (Blueprint $table) {
+            $table->increments('id');
             $table->string('FIO')->nullable();
             $table->string('publication_name')->nullable();
             $table->string('journal')->nullable();
@@ -23,7 +23,7 @@ class Qqson extends Migration
             $table->string('page')->nullable();
             $table->timestamps();
         });
-        DB::table('qqson')->insert([
+        DB::table('qqsons')->insert([
             'FIO' => 'Y. Sultanmakhmut P.',
             'publication_name' => 'Energya Vselennoy(Ya Hippy)',
             'journal' => 'Masonskoe bratstvo',
@@ -39,6 +39,6 @@ class Qqson extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('qqson');
+        Schema::dropIfExists('qqsons');
     }
 }

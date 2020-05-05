@@ -58,3 +58,13 @@ Route::group(['as'=> 'teacher','prefix' => 'teacher', 'namespace' => 'Teacher', 
 Route::get('/createWord',['as' =>'createWord','uses'=>'WordTestController@createWordDocx'])->name('publications.word');
 Route::get('invoices/download', 'InvoiceController@download');
 Route::get('/test', 'PDFTestController@index');
+
+Route::resource('qqsons','QqsonController');
+
+Route::get('/qqsons','QqsonController@index')->name('Qqson.qqson_show');
+Route::get('/qqsons/qqson_create','QqsonController@create')->name('Qqson.qqson_create');
+Route::post('/qqsons','QqsonController@store')->name('Qqson.store');
+Route::get('/qqsons/{qqson}','QqsonController@show')->name('Qqson.qqson_show');
+Route::get('/qqsons/{qqson}/qqson_edit','QqsonController@edit')->name('Qqson.qqson_edit');
+Route::put('/qqsons/{contact}','QqsonController@update')->name('Qqson.qqson_update');
+Route::put('/qqsons/{contact}','QqsonController@destroy')->name('Qqson.qqson_destroy');

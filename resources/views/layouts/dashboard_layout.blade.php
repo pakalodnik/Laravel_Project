@@ -69,7 +69,13 @@
                             <li><a href="instructors.html">Instructors</a></li>
                             <li><a href="blog.html">Blog</a></li>
                             -->
-                            <li><a href="/publications">Publications</a></li>
+                            <li><a href="#">Publication</a>
+                                <ul class="dropdown">
+                                    <li><a href="/publications">Impact</a></li>
+                                    <li><a href="/qqsons">KKSON</a></li>
+                                </ul>
+                            </li>
+                            <!--<li><a href="/publications">Publications</a></li>-->
                             <li><a href="/teachers">Teachers</a></li>
                         </ul>
                         @else
