@@ -32,13 +32,6 @@ class Teachers extends Migration
             'email' => 'Sultan.Yerman@somatic.kz',
             'description' => 'hzmzhzmhzmz',
             'own' => 'dsa',
-        ],[
-            'first_name' => 'Sula',
-            'last_name' => 'Yermanalyuly',
-            'patronymic' => 'Presidentovich',
-            'email' => 'Sultan.Yerman@somatic.kz',
-            'description' => 'hzmzhzmhzmz',
-            'own' => 'dsa',
         ]);
     }
     /**
