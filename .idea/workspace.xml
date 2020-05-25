@@ -1,12 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="baa4c800-cd83-4b8e-9dce-cc72ff53f6a8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PublicationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PublicationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_04_13_185050_create_publications_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_04_13_185050_create_publications_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_04_205410_qqson.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_04_205410_qqson.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_05_04_210023_journal.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_05_04_210023_journal.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,10 +173,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/clever/index.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -192,6 +222,9 @@
       <workItem from="1588623424921" duration="560000" />
       <workItem from="1588624045077" duration="4550000" />
       <workItem from="1588651686641" duration="4275000" />
+      <workItem from="1590098295968" duration="1662000" />
+      <workItem from="1590173010842" duration="774000" />
+      <workItem from="1590389609648" duration="1262000" />
     </task>
     <task id="LOCAL-00001" summary="Add some migrations">
       <created>1587402776008</created>
@@ -304,6 +337,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add some migrations" />
@@ -342,22 +387,26 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1586721104494" />
-    <state width="1306" height="176" key="GridCell.Tab.0.bottom" timestamp="1587413452293">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1296" height="170" key="GridCell.Tab.0.bottom" timestamp="1590099957523">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1587413452293" />
-    <state width="1306" height="176" key="GridCell.Tab.0.center" timestamp="1587413452293">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1296" height="170" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1590099957523" />
+    <state width="1296" height="170" key="GridCell.Tab.0.center" timestamp="1590099957521">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1587413452293" />
-    <state width="1306" height="176" key="GridCell.Tab.0.left" timestamp="1587413452293">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1296" height="170" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1590099957521" />
+    <state width="1296" height="170" key="GridCell.Tab.0.left" timestamp="1590099957520">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1587413452293" />
-    <state width="1306" height="176" key="GridCell.Tab.0.right" timestamp="1587413452293">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1296" height="170" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1590099957520" />
+    <state width="1296" height="170" key="GridCell.Tab.0.right" timestamp="1590099957522">
+      <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="1306" height="176" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1587413452293" />
+    <state width="1296" height="170" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1590099957522" />
     <state x="129" y="54" key="MergeDialog" timestamp="1588620089861">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
