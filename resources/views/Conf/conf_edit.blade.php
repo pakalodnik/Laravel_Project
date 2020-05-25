@@ -2,7 +2,7 @@
 @section('content')
 <div class="row">
     <div class="col-sm-8 offset-sm-2">
-        <h1 class="display-3">Update a ККСОН publication</h1>
+        <h1 class="display-3">Update a conferention publication</h1>
 
         @if ($errors->any())
         <div class="alert alert-danger">
@@ -14,7 +14,7 @@
         </div>
         <br /> 
         @endif
-        <form method="post" action="{{ route('qqsons.update', $qqson->id) }}">
+        <form method="post" action="{{ route('confs.update', $conf->id) }}">
             @method('PATCH') 
             @csrf
             <div class="form-group">
@@ -27,8 +27,12 @@
               <input type="text" class="form-control" name="publication_name"/>
           </div>
           <div class="form-group">
-              <label for="title">Magazine:</label>
-              <input type="text" class="form-control" name="journal"/>
+              <label for="title">Conferention title:</label>
+              <input type="text" class="form-control" name="conf"/>
+          </div>
+          <div class="form-group">
+              <label for="title">Conferention place:</label>
+              <input type="text" class="form-control" name="place"/>
           </div>
           <div class="form-group">
               <label for="title">Year:</label>

@@ -19,7 +19,7 @@ class Qqson extends Migration
             $table->string('FIO')->nullable();
             $table->string('publication_name')->nullable();
             $table->string('journal')->nullable();
-            $table->date('date')->unique()->nullable();
+            $table->string('date')->unique()->nullable();
             $table->string('page')->nullable();
             $table->timestamps();
         });

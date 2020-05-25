@@ -73,6 +73,7 @@
                                 <ul class="dropdown">
                                     <li><a href="/publications">Impact</a></li>
                                     <li><a href="/qqsons">KKSON</a></li>
+                                    <li><a href="/confs">Conferention</a></li>
                                 </ul>
                             </li>
                             <!--<li><a href="/publications">Publications</a></li>-->

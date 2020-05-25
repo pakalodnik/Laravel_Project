@@ -39,15 +39,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-//#Route::get('/publications','PublicationController@index');
-//Route::get('/tasks','TasksController@index')->name('tasks.index');
-//Route::get('/tasks/create','TasksController@create')->name('tasks.create');
-//Route::post('/tasks/store','TasksController@store')->name('tasks.store');
-//Route::get('/tasks/{id}/edit','TasksController@edit')->name('tasks.edit');
-//Route::put('/tasks/{id}/update','TasksController@update')->name('tasks.update');
-//Route::get('/tasks/{id}/show','TasksController@show')->name('tasks.show');
-//Route::delete('/tasks/{id}/destroy','TasksController@destroy')->name('tasks.destroy');
-//
 
 
 Route::group(['as'=> 'teacher','prefix' => 'teacher', 'namespace' => 'Teacher', 'middleware' => ['auth', 'teacher']],
@@ -68,3 +59,12 @@ Route::get('/qqsons/{qqson}','QqsonController@show')->name('Qqson.qqson_show');
 Route::get('/qqsons/{qqson}/qqson_edit','QqsonController@edit')->name('Qqson.qqson_edit');
 Route::put('/qqsons/{contact}','QqsonController@update')->name('Qqson.qqson_update');
 Route::put('/qqsons/{contact}','QqsonController@destroy')->name('Qqson.qqson_destroy');
+
+Route::resource('confs','ConfController');
+Route::get('/confs','ConfController@index')->name('Conf.conf_show');
+Route::get('/confs/conf_create','ConfController@create')->name('Conf.conf_create');
+Route::post('/confs','ConfController@store')->name('Conf.store');
+Route::get('/confs/{conf}','ConfController@show')->name('Conf.conf_show');
+Route::get('/confs/{conf}/conf_edit','ConfController@edit')->name('Conf.conf_edit');
+Route::put('/confs/{contact}','ConfController@update')->name('Conf.conf_update');
+Route::put('/confs/{contact}','ConfController@destroy')->name('Conf.conf_destroy');

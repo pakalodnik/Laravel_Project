@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Qqson;
+use App\Conf;
 
-class QqsonController extends Controller
+class ConfController extends Controller
 {
+    //
     /**
      * Display a listing of the resource.
      *
@@ -16,9 +17,9 @@ class QqsonController extends Controller
     {
         //
         
-        $qqsons=Qqson::all();
+        $confs=Conf::all();
 
-        return view('Qqson.qqson_show', compact('qqsons'));
+        return view('conf.conf_show', compact('confs'));
     }
 
     /**
@@ -29,7 +30,7 @@ class QqsonController extends Controller
     public function create()
     {
         //
-        return view('Qqson.qqson_create');
+        return view('conf.conf_create');
     }
 
     /**
@@ -41,21 +42,25 @@ class QqsonController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'FIO'=>'required'
-            
+            'FIO'=>'required',
+            'title'=>'required',
+            'date'=>'required',
+            'page'=>'required',
+            'url'=>'required'
         ]);
 
-        $qqson = new Qqson([
+        $conf = new Conf([
             'FIO'=> $request->get('FIO'),
             'publication_name'=> $request->get('publication_name'),
-            'journal'=> $request->get('journal'),
+            'conf'=> $request->get('conf'),
+            'place'=> $request->get('place'),
             'date'=> $request->get('date'),
             'page'=> $request->get('page')
             
             #'isVerified' => $request->get('isVerified')
         ]);
-        $qqson->save();
-        return redirect('/qqsons')->with('success', 'qqson saved!');
+        $conf->save();
+        return redirect('/confs')->with('success', 'conf saved!');
     }
 
     /**
@@ -79,8 +84,8 @@ class QqsonController extends Controller
     public function edit($id)
     {
         //
-        $qqson = qqson::find($id);
-        return view('Qqson.qqson_edit', compact('qqson'));
+        $conf = conf::find($id);
+        return view('conf.conf_edit', compact('conf'));
     }
 
     /**
@@ -98,16 +103,17 @@ class QqsonController extends Controller
             
         ]);
 
-        $qqson = qqson::find($id);
-        $qqson->FIO= $request->get('FIO');
-        $qqson->publication_name= $request->get('publication_name');
-        $qqson->journal= $request->get('journal');
-        $qqson->date= $request->get('date');
-        $qqson->page= $request->get('page');
-        #$qqson->isVerified = $request->get('isVerified');
-        $qqson->save();
+        $conf = conf::find($id);
+        $conf->FIO= $request->get('FIO');
+        $conf->publication_name= $request->get('publication_name');
+        $conf->conf= $request->get('conf');
+        $conf->place= $request->get('place');
+        $conf->date= $request->get('date');
+        $conf->page= $request->get('page');
+        #$conf->isVerified = $request->get('isVerified');
+        $conf->save();
 
-        return redirect('/qqsons')->with('success', 'qqson updated!');
+        return redirect('/confs')->with('success', 'conf updated!');
     }
 
     /**
@@ -119,9 +125,9 @@ class QqsonController extends Controller
     public function destroy($id)
     {
         //
-        $qqson = qqson::find($id);
-        $qqson->delete();
+        $conf = conf::find($id);
+        $conf->delete();
 
-        return redirect('/qqsons')->with('success', 'qqson deleted!');
+        return redirect('/confs')->with('success', 'conf deleted!');
     }
 }

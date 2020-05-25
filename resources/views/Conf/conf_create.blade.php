@@ -3,7 +3,7 @@
 @section('content')
 <div class="row">
  <div class="col-sm-8 offset-sm-2">
-    <h1 class="display-3">Add a ККСОН publication</h1>
+    <h1 class="display-3">Add a Conferention publication</h1>
   <div>
     @if ($errors->any())
       <div class="alert alert-danger">
@@ -14,7 +14,7 @@
         </ul>
       </div><br />
     @endif
-      <form method="post" action="{{route('Qqson.store')}}">
+      <form method="post" action="{{route('Conf.store')}}">
           @csrf
           <div class="form-group">
               <label for="title">Author:</label>
@@ -26,8 +26,12 @@
               <input type="text" class="form-control" name="publication_name"/>
           </div>
           <div class="form-group">
-              <label for="title">Magazine:</label>
-              <input type="text" class="form-control" name="journal"/>
+              <label for="title">Conferention title:</label>
+              <input type="text" class="form-control" name="conf"/>
+          </div>
+          <div class="form-group">
+              <label for="title">Place:</label>
+              <input type="text" class="form-control" name="place"/>
           </div>
           <div class="form-group">
               <label for="title">Year:</label>
