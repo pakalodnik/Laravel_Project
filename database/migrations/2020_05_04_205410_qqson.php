@@ -37,6 +37,34 @@ class Qqson extends Migration
             'date' => '2014/12/10',
             'page' => '13',
         ]);
+        DB::table('qqsons')->insert([
+            'FIO' => 'R. Raisa K.',
+            'publication_name' => 'Informational Technologies on any levels of enterprise (статья)',
+            'journal' => 'Store IITU 19(4C)',
+            'date' => '2018/12/10',
+            'page' => '11',
+        ]);
+        DB::table('qqsons')->insert([
+            'FIO' => 'E. Mask K.',
+            'publication_name' => 'Electronics in XXI (статья)',
+            'journal' => 'Cambridge journal 20(4B)',
+            'date' => '2020/08/10',
+            'page' => '21',
+        ]);
+        DB::table('qqsons')->insert([
+            'FIO' => 'Z. Marc B.',
+            'publication_name' => 'Can FinTech companies became online banking? (статья)',
+            'journal' => 'History of Berkley',
+            'date' => '2019/11/11',
+            'page' => '18',
+        ]);
+        DB::table('qqsons')->insert([
+            'FIO' => 'D. Pavel K.',
+            'publication_name' => 'How you confident on blockchain privacy? (статья)',
+            'journal' => 'Saints-Peterburg IT',
+            'date' => '2017/05/06',
+            'page' => '15',
+        ]);
     }
 
     /**
